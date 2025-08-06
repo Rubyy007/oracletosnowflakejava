@@ -9,7 +9,9 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git credentialsId: 'github-token', url: 'https://github.com/Rubyy007/oracletosnowflakejava.git'
+                git branch: 'main',
+                    credentialsId: 'e527d38d-3d26-456e-a6d5-e4c02352390b',
+                    url: 'https://github.com/Rubyy007/oracletosnowflakejava.git'
             }
         }
 
