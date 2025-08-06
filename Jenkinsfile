@@ -2,13 +2,8 @@ pipeline {
     agent any
 
     tools {
-        maven 'MAVEN_3' // Use the correct name from Jenkins tool config (all caps)
-        jdk 'JDK_21'    // Updated to match your installed version
-    }
-
-    environment {
-        // Optional: set environment variables if needed
-        // Example: JAVA_HOME = "${tool 'JDK_21'}"
+        maven 'MAVEN_3'
+        jdk 'JDK_21'
     }
 
     stages {
