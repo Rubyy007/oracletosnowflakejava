@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven_3' // Configure this in Jenkins: Global Tools → Maven
-        jdk 'JDK_17'    // Or your Java version
+        maven 'MAVEN_3'
+        jdk 'JDK_21'
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git credentialsId: 'your-git-cred-id', url: 'https://github.com/your_user/oracle-to-snowflake-java.git'
+                git credentialsId: 'github-token', url: 'https://github.com/Rubyy007/oracletosnowflakejava.git'
             }
         }
 
